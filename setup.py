@@ -4,6 +4,7 @@ from setuptools import setup, find_packages
 
 __pkg_name__ = 'fastx'
 __author__ = 'cwright'
+__author_email__ = 'chris.wright@oxfordnanopore.tech'
 __description__ = 'Just a simple kseq.h binding'
 
 # Use readme as long description and say its github-flavour markdown
@@ -33,18 +34,12 @@ with open(os.path.join(dir_path, 'requirements.txt')) as fh:
 
 
 if __name__ == '__main__':
-
-    pymajor, pyminor = sys.version_info[0:2]
-    if (pymajor < 3) or (pyminor not in {5, 6}):
-        raise RuntimeError(
-            '`medaka` is unsupported on your version of python, '
-            'please use python 3.5 or python 3.6.')
-
     setup(
         name=__pkg_name__,
         version=__version__,
         url='https://github.com/cjw85/{}'.format(__pkg_name__),
         author=__author__,
+        author_email=__author_email__,
         description=__description__,
         long_description=__long_description__,
         long_description_content_type=__long_description_content_type__,
@@ -52,4 +47,4 @@ if __name__ == '__main__':
         packages=find_packages(),
         cffi_modules=["build.py:ffibuilder"],
         install_requires=install_requires,
-        zip_safe=True)
+        zip_safe=False)

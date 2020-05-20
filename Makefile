@@ -25,4 +25,4 @@ sdist: pypi_build/bin/activate
 
 .PHONY: clean
 clean:
-	rm -rf __pycache__ dist build venv fastx.egg-info tmp
+	rm -rf __pycache__ dist build venv fastx.egg-info tmp _fastx*
