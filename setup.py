@@ -17,7 +17,7 @@ __long_description_content_type__ = 'text/markdown'
 
 __path__ = os.path.dirname(__file__)
 __pkg_path__ = os.path.join(os.path.join(__path__, __pkg_name__))
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 # create requirements from requirements.txt
 dir_path = os.path.dirname(__file__)

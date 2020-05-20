@@ -3,6 +3,13 @@ fastx
 
 Just a fasta/q parser based on `kseq.h` for CPython and PyPy.
 
+Install with:
+
+    pip install cffi
+    pip install fastx
+
+Example use:
+
     import fastx
     for name, seq, qual for Fastx(filename):
         print(">{}\n{}".format(name, seq))
