@@ -10,8 +10,8 @@ Install with:
 
 Example use:
 
-    import fastx
-    for name, seq, qual for Fastx(filename):
+    from fastx import Fastx  
+    for name, seq, qual in Fastx(filename):
         print(">{}\n{}".format(name, seq))
 
 This library was inspired by the benchmarking page below and that the
